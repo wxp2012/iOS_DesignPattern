@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		880518FE1CB786AE00DDB8B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 880518FD1CB786AE00DDB8B4 /* main.m */; };
 		880519011CB786AE00DDB8B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 880519001CB786AE00DDB8B4 /* AppDelegate.m */; };
-		880519041CB786AE00DDB8B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880519031CB786AE00DDB8B4 /* ViewController.m */; };
+		880519041CB786AE00DDB8B4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880519031CB786AE00DDB8B4 /* MainViewController.m */; };
 		880519071CB786AE00DDB8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880519051CB786AE00DDB8B4 /* Main.storyboard */; };
 		880519091CB786AE00DDB8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880519081CB786AE00DDB8B4 /* Assets.xcassets */; };
 		8805190C1CB786AE00DDB8B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8805190A1CB786AE00DDB8B4 /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		880518FD1CB786AE00DDB8B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		880518FF1CB786AE00DDB8B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		880519001CB786AE00DDB8B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		880519021CB786AE00DDB8B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		880519031CB786AE00DDB8B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		880519021CB786AE00DDB8B4 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		880519031CB786AE00DDB8B4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		880519061CB786AE00DDB8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		880519081CB786AE00DDB8B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8805190B1CB786AE00DDB8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			children = (
 				880518FF1CB786AE00DDB8B4 /* AppDelegate.h */,
 				880519001CB786AE00DDB8B4 /* AppDelegate.m */,
-				880519021CB786AE00DDB8B4 /* ViewController.h */,
-				880519031CB786AE00DDB8B4 /* ViewController.m */,
+				880519021CB786AE00DDB8B4 /* MainViewController.h */,
+				880519031CB786AE00DDB8B4 /* MainViewController.m */,
 				880519051CB786AE00DDB8B4 /* Main.storyboard */,
 				880519081CB786AE00DDB8B4 /* Assets.xcassets */,
 				8805190A1CB786AE00DDB8B4 /* LaunchScreen.storyboard */,
@@ -207,7 +207,6 @@
 				TargetAttributes = {
 					880518F81CB786AE00DDB8B4 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = Y42CU4L747;
 					};
 					880519111CB786AE00DDB8B4 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -273,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				880519041CB786AE00DDB8B4 /* ViewController.m in Sources */,
+				880519041CB786AE00DDB8B4 /* MainViewController.m in Sources */,
 				880519011CB786AE00DDB8B4 /* AppDelegate.m in Sources */,
 				880518FE1CB786AE00DDB8B4 /* main.m in Sources */,
 			);
@@ -416,10 +415,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSDesignPattern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Animation.iOSDesignPattern;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -427,10 +430,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSDesignPattern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Animation.iOSDesignPattern;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -501,6 +508,7 @@
 				880519281CB786AE00DDB8B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		880519291CB786AE00DDB8B4 /* Build configuration list for PBXNativeTarget "iOSDesignPatternTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +517,7 @@
 				8805192B1CB786AE00DDB8B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8805192C1CB786AE00DDB8B4 /* Build configuration list for PBXNativeTarget "iOSDesignPatternUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +526,7 @@
 				8805192E1CB786AE00DDB8B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
